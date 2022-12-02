@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function add() {
+            var numOne, numTwo, sum;
+            numOne = parseInt(document.getElementById("first").value);
+            numTwo = parseInt(document.getElementById("second").value);
+            sum = numOne + numTwo;
+
+            document.getElementById("answer").innerHTML = sum;
+        }
+    </script>
+
+    <label>Enter Number 1</label><input type="text" id="first"><br>
+    <label>Enter Number 2</label><input type="text" id="second"><br>
+    <button id="btn" type="button" onclick="add()">Addition</button><br>
+    <p id="answer"></p>
+</body>
+
+</html>
